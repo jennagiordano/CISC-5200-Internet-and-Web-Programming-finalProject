@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facts Page</title>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- link for css -->
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+
+	<!-- link for java -->
+	<script type="text/javascript" src="../script/java.js"></script>
+
+	<!-- set up utf-8 encoding -->
+	<meta charset="utf-8">
+
+	<!-- set a viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Lstest compiled bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- lastest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+</head>
+
+<body>
+	<!-- top of page -->
+	<div id="top"></div>
+
+	<!-- NAV bar -->
+  <!-- all links a except CONTACT and PLACES -->
+  <!-- set icon height and with -->
+	<div class="topnav">
+		<a href="../index.html" class="link">HOME <img src="../icons/home.jpg" width="20" height="20"></a> 
+		<a href="../pages/favorites.html" class="link">FAVS <img src="../icons/heart.jpg" width="20" height="20"></a>
+		<a href="../pages/least.html" class="link">LEAST FAVS <img src="../icons/thumb.jpg" width="20" height="20"></a>
+		<a href="../pages/facts.html" class="link">FUN FACTS <img src="../icons/world.jpg" width="20" height="20"></a>
+		<button class="button link" id="contactButton">CONTACT <img src="../icons/mail.jpg" width="20" height="20"></button>
+		<button class="button link" id="placesButton">PLACES <img src="../icons/plane.jpg" width="20" height="20"></button>
+	</div>
+
+	<!-- space between nav bar and animation -->
+	<br><br><br>
+
+ <!-- places div -->
+  <div class="box">
+  <div class="box-inner">
+    <h4>Places: </h4>
+     <!-- ordered list of places, all links to wikis of places -->
+    <ol>
+      <li><a href="https://en.wikipedia.org/wiki/Bangkok" class="link" target="_blank">Bangkok,Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Berlin" class="link" target="_blank">Berlin, Germany</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Cayman_Islands" class="link" target="_blank">Grand Cayman, Cayman Islands</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Chiang_Mai" class="link" target="_blank">Chiang Mai, Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Dubai" class="link" target="_blank">Dubai, United Arab Emirates</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_Bay" class="link" target="_blank">Ha Long Bay, Vietnam</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Jerusalem" class="link" target="_blank">Jerusalem, Israel</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Ko_Yao_Yai_(island)" class="link" target="_blank">Koh Yao Yai, Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Lake_Como" class="link" target="_blank">Lake Como, Italy</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/London" class="link" target="_blank">London,England</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Mae_Hong_Son" class="link" target="_blank">Mae Hong Son, Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Nairobi" class="link">Nairobi, Africa</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Paris" class="link" target="_blank">Paris, France</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Porto" class="link" target="_blank">Porto, Portugal</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Prague" class="link" target="_blank">Prague, Czech Republic</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Rome" class="link" target="_blank">Rome, Italy</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Santorini" class="link" target="_blank">Santorini, Greece</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Castellammare_del_Golfo" class="link" target="_blank">Castellamare del Golfo, Sicily</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Venice" class="link" target="_blank">Venice, Italy</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Vienna" class="link" target="_blank">Vienna, Austria</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Zanzibar" class="link" target="_blank">Zanzibar, Tanzania</a></li>
+    </ol>
+  </div>
+</div>
+
+  <!-- title animation -->
+  <!-- first div id plane for css animation -->
+  <!-- second div id line for css animation -->
+  <!-- third div id indexHeader for css animation -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<img src="../images/plane.jpg" id="plane">
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="line">
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<h1 id="indexHeader">#funFacts</h1>
+			</div>
+		</div>
+
+    <!-- space between animation and h4 -->
+		<br><br>
+
+    <h4>Click a place for a fact</h4>
+    
+    <!-- space between h4 and all facts button -->
+    <br>
+
+    <!-- all facts button container using bootstrap -->
+    <!-- all facts button given id and class for styling and java use-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+        <button id="fact1" class="allFact"><h3>ALL FACTS</h3></button>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- fact container using bootstrap -->
+  <!-- each col has a specified button class and and fact id for styling and java use-->
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle1">
+         <button id="fact1" class="bangkokFact"><h3>BANGKOK</h3></button>
+         <p id="bangkokFact">It is illegal to leave the house without underwear in Bangkok.</p>
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle2">
+         <button id="fact2" class="lakeComoFact"><h3>LAKE COMO</h3></button> 
+          <p id="lakeComoFact">Several famous movies were filmed some scenes in Lake Como, such as Star Wars: Episode II and James Bond movie Casino Royale. </p>  
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle1">
+        <button id="fact1" class="caymanFact"><h3>CAYMAN</h3></button>
+         <p id="caymanFact">The national symbol of the Cayman Islands is the Green Sea Turtle</p>
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle2">
+        <button id="fact2" class="zanzibarFact"><h3>ZANZIBAR</h3></button>
+         <p id="zanzibarFact">The shortest war ever recorded by man is the Anglo-Zanzibar War where the British bombarded the Beit al Hukum Palace and after 38 minutes, a ceasefire was called</p>
+      </div>
+    </div>
+
+
+  	 <div class="row">
+      <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 factStyle3" >
+          <button id="fact3" class="londonFact"><h3>LONDON</h3> </button>
+          <p id="londonFact">It is illegal to die in the Palace of Westminster</p> 
+      </div>
+      <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 factStyle2">
+         <button id="fact2" class="dubaiFact"><h3>DUBAI</h3></button> 
+          <p id="dubaiFact">The police force in In Dubai robots are replacing illegal child labor in camel racing</p>  
+      </div>
+      <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 factStyle3">
+        <button id="fact3" class="portoFact"><h3>PORTO</h3></button>
+         <p id="portoFact">Gustave Eiffel-designer of the Eiffel Tower- designed one of the bridges over the Douro River in Porto</p>
+      </div>
+      <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 factStyle2">
+        <button id="fact2" class="jerusalemFact"><h3>JERUSALEM</h3></button>
+        <p id="jerusalemFact">Jerusalem is said to be where the Last Supper, Crucifixion of Jesus, and Resurrection of Jesus took place.</p>
+      </div>
+      <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 factStyle3">
+        <button id="fact3" class="parisFact"><h3>PARIS</h3></button>
+        <p id="parisFact">There are on average 10 film or commercial shoots in the streets of Paris each day.</p>
+      </div>
+      <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 factStyle2">
+         <button id="fact2" class="berlinFact"><h3>BERLIN</h3> </button>  
+         <p id="berlinFact">Every year the city of Berlin spends €35 million (approx. $41,276,550) on cleaning graffiti</p>
+      </div>
+    </div>
+
+
+     <div class="row">
+      <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 factStyle2">
+         <button id="fact2" class="chiangMaiFact"><h3>CHIANG MAI</h3></button>
+         <p id="chiangMaiFact">Chiang Mai and other Northern Thai Regions contain over 50 elephant sanctuaries.</p>  
+      </div>
+      <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 factStyle3">
+          <button id="fact3" class="maeHongSonFact"><h3>MAE HON SONG</h3></button> 
+          <p id="maeHongSonFact">Three of Bangkok’s main Shopping Malls use more electricity than the entire province of Mae Hong Son</p>  
+      </div>
+      <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 factStyle1">
+        <button id="fact1" class="viennaFact"><h3>VIENNA</h3></button>
+         <p id="viennaFact">Four of the top 10 classical composers in history called Vienna home-Wolfgang Amadeus Mozart, Ludwig van Beethoven, Joseph Haydn, Franz Schubert, Johann Straus and Johannes Brahms.</p>
+      </div>
+    </div>
+
+     <div class="row">
+     <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle3">
+         <button id="fact3" class="nairobiFact"><h3>NAIROBI</h3></button>
+         <p id="nairobiFact">Nairobi has the most shopping complexes in all of Kenya.</p>   
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle1" >
+          <button id="fact1" class="kohYaoYaiFact"><h3>KOH YAO YAI</h3> </button> 
+          <p id="kohYaoYaiFact">The name Koh Yao Yai means "big long island"</p> 
+      </div>
+       <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle2">
+         <button id="fact2" class="halongBayFact"><h3>HA LONG BAY</h3></button>
+         <p id="halongBayFact">Less than half of the islands the make up Ha Long Bay have been named.</p>   
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle3">
+         <button id="fact3" class="pragueFact"><h3>PRAGUE</h3></button>  
+         <p id="pragueFact"> Prague locals drink more beer per capita than any other country in the world</p>
+      </div>
+
+
+      <div class="row">
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle1" >
+          <button id="fact1" class="romeFact"><h3>ROME</h3> </button>
+           <p id="romeFact">Every night at the Trevi Fountain about 3,000 Euros are swept up from the bottom of the basin. The money is donated to Caritas, a catholic charity, who uses the money to provide services for needy families in Rome</p>  
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle3">
+         <button id="fact3" class="santoriniFact"><h3>SANTORINI</h3></button>  
+          <p id="santoriniFact">There is so little rain on the island of Santorini, that wine is more plentiful than water</p> 
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle1">
+        <button id="fact1" class="sicilyFact"><h3>SICILY</h3></button>
+         <p id="sicilyFact">It takes roughly 3 and a half hours by car to cross the island from east to west, and around 2 and a half from north to south</p>
+      </div>
+      <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3 factStyle2">
+        <button id="fact2" class="veniceFact"><h3>VENICE</h3></button>
+         <p id="veniceFact">In some areas of Venice, the buildings were painted bright colors so that fishermen returning home when it was dark could find their homes more easily.</p>
+      </div>
+    </div>
+      
+
+    </div>
+
+    <!-- space between facts and contact form -->
+   <br><br><br>
+
+    <!-- contact form -->
+    <!-- given id formHeaderFont for styling -->
+    <!-- given id contact for styling and java use -->
+		<div> 
+			<form id="contact"> 
+				<span id="formHeaderFont">First name: </span> <br>
+				<input type="text" name="firstname" placeHolder="Your first name">
+				<br>
+				<span id="formHeaderFont">Last name: </span> <br>
+				<input type="text" name="lastname" placeHolder="Your last name">
+				<br>
+				<span id="formHeaderFont">Email Address: </span><br>
+				<input type="text" name="email" placeholder="jgiordano17@fordham.edu">
+				<br>
+				<textarea placeholder="Messages.."></textarea>
+				<br>
+				<input type="submit" value="Submit" id="formHeaderFont">
+			</form>
+		</div>
+    </div>
+
+    <!-- footer -->
+		<footer>© JennaGiordano 2017. All rights reserved. <a href="">Terms + Conditions </a>| <a href="">Privacy Policy</a></footer>
+
+
+
+
+
+	</body>
+	</html>

@@ -1,0 +1,547 @@
+/*set everything to border box*/
+* {
+  box-sizing: border-box;
+}
+
+/*important overides bootstra*/
+/*set bodys background color to white*/
+/*set default font color, font, and second font if first isnt available*/
+body {
+  background-color:  #fcfcfc  !important;
+  color: #007290 !important;
+  font-family: 'Love Ya Like A Sister', cursive !important;
+}
+
+/*change font color of class link to white*/
+/*underlines all links*/
+.link {
+  color: #fcfcfc !important;
+  text-decoration: underline !important;
+}
+
+/*underlines all links that arent class link*/
+a {
+  text-decoration: underline !important;
+}
+
+/*sets height of slide show pictures to be the same for all*/
+#height {
+  height: 600px !important;
+}
+
+/*sets all h1 and h2 to center and z-index to 1*/
+h2, h1{
+  text-align: center;
+  z-index: 1;
+
+}
+
+/* top nav style, width 100%, position fixed, z-index 1,
+slightly moved up, background color blue, display set, 
+content center*/
+.topnav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: -1px;  
+  background-color: #007290;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  padding: 14px 16px; 
+}
+
+/* Change the color and font size of links and buttons on hover */
+a:hover, button:hover {
+  font-size: 20px;
+  color: black !important;
+}
+
+/*sets position, width, and height of plane img for title animation*/
+/*sets animation to circle keyframe moving fowards*/
+#plane {
+  position: relative;
+  width: 180px;
+  height: 100px;
+  animation: circle 8s forwards !important;
+
+}
+
+/*sets position, borer, top alignment, and width of line for title animation*/
+/*sets animation to circle keyframe moving fowards*/
+#line {
+  position: relative;
+  border: dotted 5px;
+  top: 50px;
+  width: 100px;
+  animation: circle 8s forwards !important;
+}
+
+/*sets position, border radius, border, width, and padding
+of plane img for title animation*/
+/*sets animation to circle keyframe moving fowards*/
+#indexHeader {
+  position: relative;
+  border-radius: 25%;
+  border: dotted 5px;
+  width: 50%;
+  padding: 10px;
+  animation: circle 8s forwards !important;
+}
+
+/*keyframe animation to make title animation move fowards*/
+@keyframes circle {
+  from {left: 800px;}
+  to {left: 150px;}
+}
+
+/*sets the positioning of the div overlay for small pics
+so that text is in center*/
+/*assigns transition to ease in*/
+/*sets opacity to 0 so you can see unless hovered over*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .10s ease;
+  text-align: center;
+  
+}
+
+/*sets opacity of overlay text to 1
+so you can see it when hovering*/
+#container:hover .overlay {
+  opacity: 1;
+}
+
+/*sets height of pics on least favorites page*/
+#leastHeight{
+  height: 300px !important;
+}
+
+
+.text {
+  color:  #fcfcfc;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*sets width and margins of slide show*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 50%;
+  margin: auto;
+}
+
+
+/*shake animation of link sections*/
+.thumbnail:hover {
+  animation: shake 0.9s;
+}
+
+/*shake animation instructions*/
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+/*font color and size, text alignment, and 
+background color of bootstrap captions 
+and section tabs and thumbnail class*/
+.caption, .thumbnail{
+  color: #fcfcfc !important;
+  background-color: #007290 !important;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*sets background color of links section on index page*/
+#section {
+  background-color: #FA3200;
+}
+
+/*sets width and height for pictures on favorites page*/
+#favoritePics1, #favoritePics2, #favoritePics3 {
+  width: 100%;
+  height: 400px;
+}
+
+
+/*slide show animation for favorites page- NAIROBI*/
+@keyframes nairobiSwap {
+  0% {
+    background-image: url("../images/nairobi.jpg");
+  }
+  20% {
+    background-image: url("../images/nairobi1.jpg");
+  }
+  40% {
+    background-image: url("../images/nairobi2.jpg");
+  }
+  60% {
+    background-image: url("../images/nairobi3.jpg");
+  }
+  80% {
+    background-image: url("../images/nairobi4.jpg");
+  }
+  100% {
+    background-image: url("../images/nairobi.jpg");
+  }
+}
+
+
+/*slide show animation for favorites page- CAYMAN*/
+@keyframes caymanSwap {
+  0% {
+    background-image: url("../images/cayman.jpg");
+  }
+  20% {
+    background-image: url("../images/cayman1.jpg");
+  }
+  40% {
+    background-image: url("../images/cayman2.jpg");
+  }
+  60% {
+    background-image: url("../images/cayman3.jpg");
+  }
+  80% {
+    background-image: url("../images/cayman1.jpg");
+  }
+  100% {
+    background-image: url("../images/cayman2.jpg");
+  }
+}
+
+
+/*slide show animation for favorites page- SICILY*/
+@keyframes sicilySwap {
+  0% {
+    background-image: url("../images/sicily.jpg");
+  }
+  20% {
+    background-image: url("../images/sicily1.jpg");
+  }
+  40% {
+    background-image: url("../images/sicily2.jpg");
+  }
+  60% {
+    background-image: url("../images/sicily3.jpg");
+  }
+  80% {
+    background-image: url("../images/sicily1.jpg");
+  }
+  100% {
+    background-image: url("../images/sicily2.jpg");
+  }
+}
+
+/*animates div using keyframe for slideshow of pics*/
+/*sets background size*/
+#row1{
+ animation: nairobiSwap  30s infinite;
+ background-size: cover;
+}
+
+/*animates div using keyframe for slideshow of pics*/
+/*sets background size*/
+#row2{
+ animation: caymanSwap  30s infinite;
+ background-size: cover;
+}
+
+/*animates div using keyframe for slideshow of pics*/
+/*sets background size*/
+#row3{
+ animation: sicilySwap  30s infinite;
+ background-size: cover;
+}
+
+/*sets font weight and size for favorite place names*/
+#title{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/*sets font size, color, letter spacing, text alignment
+for quotes on favorites page*/
+#favSize1, #favSize2, #favSize3 {
+  font-size: 30px;
+  color: #fcfcfc;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+/*sets background color so favorites text is seen
+when called in java file*/
+.test{
+  background-color: #FA3200;
+}
+
+/*for div holding places sets zindex to 10
+positioning, background color, font color, width 
+and margin */
+.box{
+  z-index: 10;
+  position: absolute;
+  background-color: #FA3200;
+  color: #fcfcfc;
+  width: 20%;
+  margin: 10px;
+}
+
+/* Add padding and border to inner contentof places div 
+for better animation effect */
+.box-inner{
+ width: 100%;
+ padding: 10px;
+ border: 5px solid #007290;
+}
+
+/*sets width padding margin box sizing border background color and border radius
+of text style elements in contacts form*/
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 5px solid #007290;
+  border-radius: 4px;
+}
+
+/*sets padding margin box sixing border radius background color border
+and cursor type for submit button*/
+input[type=submit]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #007290;
+  border: none;
+  cursor: pointer;
+}
+
+/*sets background color of submit button on hover*/
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*sets width, height, padding, box sizingm border, background color, border radius,
+font color, font size, and resize for text area (messages) in contacts form*/
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 5px solid #007290;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #007290 !important;
+  font-size: 16px;
+  resize: none;
+}
+
+/*sets color of form headings (first name..etc.)*/
+#formHeaderFont{
+  color: #fcfcfc;
+}
+
+/*sets background color, width, padding, margin, font color, 
+position, and border radius of contact form*/
+#contact {
+  background-color: #FA3200;
+  width: 50%;
+  padding: 40px;
+  margin: 0 auto 0;
+  color: #007290;
+  position: relative;
+  border-radius: 10%;
+}
+
+/*sets background color of places and contact button in menu bar*/
+/*also sets border color, text color, text decoration and outline
+to none*/
+#contactButton, #placesButton {
+  background-color: #007290;
+  border-color: #007290;
+  color: #fcfcfc !important;
+  text-decoration: underline !important;
+  outline: none;
+}
+
+
+/*sets border, text alignment and decoration, padding, font color, 
+and background color for first fact div style type */
+.factStyle1{
+  border: 10px double #fcfcfc;
+  text-align: center;  
+  text-decoration: underline !important;
+  background-color: #FA3200;
+  padding: 10px;
+  color: #fcfcfc;
+  text-decoration: none !important;
+}
+
+/*sets border, text alignment and decoration, padding, font color, 
+and background color for second fact div style type */
+.factStyle2{
+  border: 10px double #FA3200;
+  text-align: center;  
+  text-decoration: underline !important;
+  background-color: #007290;
+  padding: 10px;
+  color: #fcfcfc;
+  text-decoration: none !important;
+}
+
+/*sets border, text alignment and decoration, padding, font color, 
+and background color for third fact div style type */
+.factStyle3{
+  border: 10px double #007290;
+  text-align: center;  
+  background-color: #fcfcfc;
+  padding: 10px;
+  color: #FA3200;
+  text-decoration: none !important;
+}
+
+/*sets background color outline and border for fact3 button style*/
+#fact1 {
+  background-color: #FA3200;
+  outline: none;
+  border: none;
+}
+
+/*sets background color outline and border for fact2 button style*/
+#fact2{
+  background-color: #007290;
+  outline: none;
+  border: none;
+
+}
+
+/*sets background color outline and border for fact3 button style*/
+#fact3{
+  background-color: #fcfcfc;
+  outline: none;
+  border: none;
+}
+
+/*sets display to all facts as none*/
+#bangkokFact, #lakeComoFact, #caymanFact, 
+#zanzibarFact, #londonFact, #dubaiFact, #portoFact, #jerusalemFact,
+#parisFact, #berlinFact, #chiangMaiFact, 
+#maeHongSonFact, #nairobiFact, #kohYaoYaiFact, #halongBayFact, 
+#pragueFact, #romeFact, #santoriniFact, #sicilyFact, #veniceFact, 
+#viennaFact{
+  display: none;
+}
+
+/*sets width and height of top least fav pics*/
+#leastFavPics1, #leastFavPics2 {
+  width: 100%;
+  height: 300px;
+}
+
+/*sets width and height of bottom least fav pic*/
+#leastFavPics3{
+  width: 100%;
+  height: 400px;
+
+}
+
+/*sets filter of grayscale to 0
+sets transition to .3seconds and ease in and out*/
+.grayscale {
+  filter: grayscale(0%);
+  transition: .3s ease-in-out;
+}
+
+/*ON HOVER: sets filter of grayscale to 100
+sets transition to .3seconds and ease in and out*/
+.grayscale:hover {
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+}
+
+/*sets color, font size, positioning of the text that appears 
+on least favorites images*/
+.leastText {
+  color: #fcfcfc;
+  font-size: 30px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*sets box shadow, rotation, background color, and padding
+for first least favorites div*/
+.shadow1 {
+   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -webkit-transform: rotate(-6deg);
+    background-color: #FA3200 ;
+    padding: 10px;
+
+}
+
+/*sets box shadow, rotation, background color, and padding
+for second least favorites div*/
+.shadow2 {
+   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -webkit-transform: rotate(6deg);
+    background-color: #fcfcfc ;
+    padding: 10px;
+
+}
+
+/*sets box shadow, rotation, background color, padding, and font color
+for bottom least favorites div*/
+.shadow3 {
+   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -webkit-transform: rotate(-5deg);
+    background-color: #007290 ;
+    padding: 10px;
+    color: white !important;
+}
+
+/*sets boxshadow, scale, and scale on hover for least
+favorites effect*/
+.shadow1:hover, .shadow2:hover, .shadow3:hover{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.0);
+  z-index:5;
+}
+
+/*sets font size of links in places list*/
+#list {
+  font-size: 30px;
+}

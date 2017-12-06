@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favorites Page</title>
+  <!-- jQuery library -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- link for css -->
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+
+  <!-- link for java -->
+  <script type="text/javascript" src="../script/java.js"></script>
+
+  <!-- set up utf-8 encoding -->
+  <meta charset="utf-8">
+
+  <!-- set a viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Lstest compiled bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <!-- lastest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+</head>
+<body>
+<!-- top of page -->
+<div id="top"></div>
+  
+  <!-- NAV bar -->
+  <!-- all links a except CONTACT and PLACES -->
+  <!-- set icon height and with -->
+ <div class="topnav">
+  <a href="../index.html" class="link">HOME <img src="../icons/home.jpg" width="20" height="20"></a> 
+  <a href="../pages/favorites.html" class="link">FAVS <img src="../icons/heart.jpg" width="20" height="20"></a>
+  <a href="../pages/least.html" class="link">LEAST FAVS <img src="../icons/thumb.jpg" width="20" height="20"></a>
+  <a href="../pages/facts.html" class="link">FUN FACTS <img src="../icons/world.jpg" width="20" height="20"></a>
+  <button class="button link" id="contactButton">CONTACT <img src="../icons/mail.jpg" width="20" height="20"></button>
+  <button class="button link" id="placesButton">PLACES <img src="../icons/plane.jpg" width="20" height="20"></button>
+</div>
+
+<!-- space between menu bar and title animation -->
+<br><br><br>
+
+ <!-- places div -->
+<div class="box">
+  <div class="box-inner">
+    <h4>Places: </h4>
+    <!-- ordered list of places, all links to wikis of places -->
+    <ol>
+      <li><a href="https://en.wikipedia.org/wiki/Bangkok" class="link" target="_blank">Bangkok,Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Berlin" class="link" target="_blank">Berlin, Germany</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Cayman_Islands" class="link" target="_blank">Grand Cayman, Cayman Islands</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Chiang_Mai" class="link" target="_blank">Chiang Mai, Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Dubai" class="link" target="_blank">Dubai, United Arab Emirates</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_Bay" class="link" target="_blank">Ha Long Bay, Vietnam</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Jerusalem" class="link" target="_blank">Jerusalem, Israel</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Ko_Yao_Yai_(island)" class="link" target="_blank">Koh Yao Yai, Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Lake_Como" class="link" target="_blank">Lake Como, Italy</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/London" class="link" target="_blank">London,England</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Mae_Hong_Son" class="link" target="_blank">Mae Hong Son, Thailand</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Nairobi" class="link">Nairobi, Africa</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Paris" class="link" target="_blank">Paris, France</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Porto" class="link" target="_blank">Porto, Portugal</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Prague" class="link" target="_blank">Prague, Czech Republic</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Rome" class="link" target="_blank">Rome, Italy</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Santorini" class="link" target="_blank">Santorini, Greece</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Castellammare_del_Golfo" class="link" target="_blank">Castellamare del Golfo, Sicily</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Venice" class="link" target="_blank">Venice, Italy</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Vienna" class="link" target="_blank">Vienna, Austria</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Zanzibar" class="link" target="_blank">Zanzibar, Tanzania</a></li>
+    </ol>
+  </div>
+</div>
+
+  <!-- title animation -->
+  <!-- first div id plane for css animation -->
+  <!-- second div id line for css animation -->
+  <!-- third div id indexHeader for css animation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+      <img src="../images/plane.jpg" id="plane">
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="line">
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <h1 id="indexHeader">#favs</h1>
+    </div>
+  </div>
+  <br>
+
+  <!-- row 1 of favorite pics -->
+  <!-- two cols each given id for styling and java -->
+  <div class="row">
+   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="row1">
+    <p id="favoritePics1"></p>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <br><br><br><br>
+    <p id="favSize1"><span id="title">Nairobi, Kenya</span><br>"I never knew of a morning in African when I woke up and was not happy."</p>
+  </div>
+</div>
+
+<!-- space between first row and second row -->
+<br>
+
+<!-- row 2 of favorite pics -->
+<!-- two cols each given id for styling and java -->
+<div class="row">
+ <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="row2">
+  <p id="favoritePics2"></p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <br><br><br><br>
+  <p id="favSize2"><span id="title">Cayman Islands</span><br>"Relax! We're on island time."</p>
+</div>
+</div>
+
+<!-- space between second row and third -->
+<br>
+
+<!-- row 3 of favorite pics -->
+<!-- two cols each given id for styling and java -->
+<div class="row">
+ <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="row3">
+  <p id="favoritePics3"></p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" >
+  <br><br><br><br>
+  <p id="favSize3"><span id="title">Sicily, Italy</span><br>"To have Italy without having seen Sicily is to not have seen Italy at all, for Sicily is the clue to everything."</p>
+</div>
+</div>
+
+<!-- space between favorite pics and contact form -->
+<br><br>
+
+<!-- contact form -->
+<!-- given id formHeaderFont for styling -->
+<!-- given id contact for styling and java use -->
+<div> 
+  <form id="contact"> 
+    <span id="formHeaderFont">First name: </span> <br>
+    <input type="text" name="firstname" placeHolder="Your first name">
+    <br>
+    <span id="formHeaderFont">Last name: </span> <br>
+    <input type="text" name="lastname" placeHolder="Your last name">
+    <br>
+    <span id="formHeaderFont">Email Address: </span><br>
+    <input type="text" name="email" placeholder="jgiordano17@fordham.edu">
+    <br>
+    <textarea placeholder="Messages.."></textarea>
+    <br>
+    <input type="submit" value="Submit" id="formHeaderFont">
+  </form>
+</div>
+
+
+<!-- footer -->
+<footer>© JennaGiordano 2017. All rights reserved. <a href="">Terms + Conditions </a>| <a href="">Privacy Policy</a></footer>
+
+<br>
+
+
+
+</body>
+</html>
