@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project</title>
+
+  <!-- jQuery library -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <!-- link for css -->
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+
+  <!-- link for java -->
+  <script type="text/javascript" src="script/java.js"></script>
+
+  <!-- set up utf-8 encoding -->
+  <meta charset="utf-8">
+
+  <!-- set a viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Lstest compiled bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- lastest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+</head>
+  <body>
+    <!-- empty div to scroll to top -->
+    <div id="top"></div>
+
+    <!-- navigation bar div -->
+    <div class="topnav">
+      <!-- all links a except CONTACT and PLACES -->
+      <!-- set icon height and with -->
+      <a href="index.html" class="link">HOME <img src="icons/home.jpg" width="20" height="20"></a> 
+      <a href="pages/favorites.html" class="link">FAVS <img src="icons/heart.jpg" width="20" height="20"></a>
+      <a href="pages/least.html" class="link">LEAST FAVS <img src="icons/thumb.jpg" width="20" height="20"></a>
+      <a href="pages/facts.html" class="link">FUN FACTS <img src="icons/world.jpg" width="20" height="20"></a>
+      <button class="button link" id="contactButton">CONTACT <img src="icons/mail.jpg" width="20" height="20"></button>
+      <button class="button link" id="placesButton">PLACES <img src="icons/plane.jpg" width="20" height="20"></button>
+    </div>
+
+    <!-- seperate nav bar from pictures below  -->
+    <br><br>
+
+    <!-- PLACES div -->
+    <div class="box">
+      <div class="box-inner">
+        <h4>Places: </h4>
+        <!-- ordered list of places, all links to wikis of places -->
+        <ol>
+          <li><a href="https://en.wikipedia.org/wiki/Bangkok" class="link" target="_blank">Bangkok,Thailand</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Berlin" class="link" target="_blank">Berlin, Germany</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Cayman_Islands" class="link" target="_blank">Grand Cayman, Cayman Islands</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Chiang_Mai" class="link" target="_blank">Chiang Mai, Thailand</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Dubai" class="link" target="_blank">Dubai, United Arab Emirates</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_Bay" class="link" target="_blank">Ha Long Bay, Vietnam</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Jerusalem" class="link" target="_blank">Jerusalem, Israel</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Ko_Yao_Yai_(island)" class="link" target="_blank">Koh Yao Yai, Thailand</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Lake_Como" class="link" target="_blank">Lake Como, Italy</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/London" class="link" target="_blank">London,England</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Mae_Hong_Son" class="link" target="_blank">Mae Hong Son, Thailand</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Nairobi" class="link">Nairobi, Africa</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Paris" class="link" target="_blank">Paris, France</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Porto" class="link" target="_blank">Porto, Portugal</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Prague" class="link" target="_blank">Prague, Czech Republic</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Rome" class="link" target="_blank">Rome, Italy</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Santorini" class="link" target="_blank">Santorini, Greece</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Castellammare_del_Golfo" class="link" target="_blank">Castellamare del Golfo, Sicily</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Venice" class="link" target="_blank">Venice, Italy</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Vienna" class="link" target="_blank">Vienna, Austria</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Zanzibar" class="link" target="_blank">Zanzibar, Tanzania</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- space between menu bar and pictures below-->
+    <br><br>
+
+    <!--bootstrap layout of small pictures -->
+    <!-- width and height defined here -->
+    <!-- each picture given class overlay and text for css effect -->
+    <div class="container-fluid">
+     <!-- only row -->
+     <div class="row">
+
+      <div class="col-md-2 col-xs-2 col-sm-2" id="container">
+        <img src="images/prague.jpg" width="150" height="150">
+        <div class="overlay">
+          <div class="text">PRAGUE</div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-xs-2 col-sm-2" id="container">
+        <img src="images/paris.JPG" width="150" height="150">
+        <div class="overlay">
+          <div class="text">PARIS</div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-xs-2 col-sm-2" id="container">
+        <img src="images/sicily.jpg" width="150" height="150">
+        <div class="overlay">
+          <div class="text">SICILY</div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-xs-2 col-sm-2" id="container">
+        <img src="images/dubai.jpg" width="150" height="150">
+        <div class="overlay">
+          <div class="text">DUBAI</div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-xs-2 col-sm-2" id="container">
+        <img src="images/chiang_mai2.jpg" width="150" height="150">
+        <div class="overlay">
+          <div class="text">CHIANG MAI</div>
+        </div>
+      </div>
+
+
+      <div class="col-md-2 col-xs-2 col-sm-2" id="container">
+        <img src="images/bangkok2.jpg" width="150" height="150">
+        <div class="overlay">
+          <div class="text">BANGKOK</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- space between pictures and opening animation -->
+  <br>
+
+  <!-- title animation -->
+  <!-- first div id plane for css animation -->
+  <!-- second div id line for css animation -->
+  <!-- third div id indexHeader for css animation -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src="images/plane.jpg" id="plane">
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="line">
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <h1 id="indexHeader">Oh the places you will go...</h1>
+      </div>
+    </div>
+
+    <!-- space between animation and link section -->
+    <br><br>
+
+    <!-- given id section for css style -->
+    <!-- given id leastHeight for styling -->
+    <!-- class thumbnail for bootstrap thumbnail  -->
+    <!-- class caption for bootstrap caption  -->
+    <section id="section">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+          <a href="pages/favorites.html">
+            <div class="thumbnail">
+              <img src="images/nairobi4.jpg" alt="nairobi" id="leastHeight" style="width: 100%">
+              <div class="caption">
+                <p>Favorites</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+          <a href="pages/least.html">
+            <div class="thumbnail">
+              <img src="images/berlin.jpg" alt="Berlin" id="leastHeight" style="width: 100%">
+              <div class="caption">
+                <p>Least Favorites</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+          <a href="pages/facts.html">
+            <div class="thumbnail">
+              <img src="images/chiang_mai.jpg" alt="chiang_mai" id="leastHeight" style="width: 100%" >
+              <div class="caption">
+                <p>Fun Facts</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- space between link section and slide show -->
+    <br><br>
+
+
+    <!-- bootstrap slideshow use- carousel -->
+    <div class="container">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+          <li data-target="#myCarousel" data-slide-to="10"></li>
+          <li data-target="#myCarousel" data-slide-to="11"></li>
+          <li data-target="#myCarousel" data-slide-to="12"></li>
+          <li data-target="#myCarousel" data-slide-to="13"></li>
+          <li data-target="#myCarousel" data-slide-to="14"></li>
+          <li data-target="#myCarousel" data-slide-to="15"></li>
+          <li data-target="#myCarousel" data-slide-to="16"></li>
+          <li data-target="#myCarousel" data-slide-to="17"></li>
+          <li data-target="#myCarousel" data-slide-to="18"></li>
+          <li data-target="#myCarousel" data-slide-to="19"></li>
+          <li data-target="#myCarousel" data-slide-to="20"></li>
+          <li data-target="#myCarousel" data-slide-to="21"></li>
+
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <!-- active for automatic moving -->
+        <!-- style width 100 for all pics -->
+        <!-- carousel caption with description of each place -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/bangkok.jpg" alt="Bangkok" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Bangkok, Thailand</h3>
+              <p>On the other side of the globe, you will find Thailand's capital city, Bangkok. Along with being Thailand's capital, Bangkok is also the country's most populous city, filled with beautiful temples and palaces, canals, and busy markets.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/berlin.jpg" alt="Berlin" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Berlin, Germany</h3>
+              <p>The capital city of Germany lives up to its name. Berlin is the most populous city in the country and is entwined with history all around. Just by taking a short walk around the city centre, you will be exposed to different representations of German historic periods.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/cayman1.jpg" alt="Cayman" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Grand Cayman, Cayman Islands</h3>
+              <p>The Cayman Islands are a group of breath-takingly beautiful islands located in the Carribean Sea, not too far from Cuba. The largest of the three islands, Grand Cayman, provides a perfect santuary to unwind, relax, and enjoy the sun. </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/chiang_mai3.jpg" alt="Chiang Mai" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Chiang Mai, Thailand</h3>
+              <p>Chiang Mai takes you away from the city and island life of Thailand and into the mountains of the beautiful country. Chiang Mai is the largest city in northern Thailand and is known for the beautiful mountains and lush countryside that surrounds the area.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/dubai4.jpg" alt="Dubai" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Dubai, United Arab Emirates</h3>
+              <p>Dubai is one of the seven emirates that makes up the United Arab Emirates. This emirate is the most modern and progressive of the seven, developing at an extreme rate for both tourists and traders.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/halong_bay1.jpg" alt="Ha Long Bay" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Ha Long Bay, Vietnam</h3>
+              <p>Ha Long Bay is located in northern Vietnam, east of the country's capital city-Hanoi. Ha Long Bay is located in the area of the Gulf of Tangkia and is known for its oceanic topography. It is often included in the Seven Wonders of the World. </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/jerusalem2.jpg" alt="Jerusalem" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Jersulam, Israel</h3>
+              <p>Jerusalem is the cultural, spiritual, and national center for the Jewish state, as well as being a holy city to Islamic and Christian populations. This city is one of the oldest and holiest in the world, containing some of the sites of Christian Biblic stories and located not too far from Jesus' birthplace, Bethelehem. </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/kohyaoyai.jpg" alt="Koh Yao Yai" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Koh Yao Yai, Thailand</h3>
+              <p>Just a quick boat ride from Thailand's more popular island city-Phuket-Koh Yao Yai is a group of islands known for its natural beauty and preservation from human degradation. On this island you can enjoy all of the beauty of Phuket, but in a more secluded and relaxing manor.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/lakecomo2.jpg" alt="Lake Como" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Lake Como, Italy</h3>
+              <p>In the northern region of Italy, Lake Como has been a popular tourist destination for over 100 years. The area is distinguished for its fresh air, water, mountains, and good weather.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/london.jpg" alt="London" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>London, England</h3>
+              <p>Across the pound, in the United Kingdom, is England's capital and largest city. London or "Europe's Manhattan" is a noisy, vibrant, multicultural, and modern city, with little reminders of the country's history sprinkled throughout the metropolis.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/mae_hong_son.jpg" alt="Mae Hon Song" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Mae Hon Song, Thailand</h3>
+              <p>In the northern region of Thailand you will find the small and quaint town of Mae Hon Song. In this city you might find yourself visiting the local villagers, walking across the Su Tong Pae Bamboo Bridge, or visiting the mud spa.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/nairobi3.jpg" alt="Nairobi" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Nairobi, Kenya</h3>
+              <p>Situated on the Nairobi River, the city is not only the largest and fastest growing city in Kenya, but also in Africa. A couple hours drive from the city, you might find yourself faced with a lion or a family of elephants on an esteemed African safari in the Masai Mara National Wildlife Reserve.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/paris2.jpg" alt="Paris" style="width:100%;" id="height">
+            <div class="carousel-caption ">
+              <h3>Paris, France</h3>
+              <p>Paris is the cosmopolitan capital of France and one of the largest city's in Europe. Paris earns it's labels as "The City of Light" and "The Capital of Fashion" with its vastly influential culture, art, fashion, food and design, as well as its beautiful scenery and romantic atmosphere.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/porto2.jpg" alt="Porto" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Porto, Portugal</h3>
+              <p>Porto is Portugal's second largest city and capital of the Northern Region. The city was built along the hills in order to overlook the Douro River.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/prague1.jpg" alt="Prague" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Prague, Czech Republic</h3>
+              <p>Along with being the capital city and largest city of the Czech Republic, Prague is famous for its unique medieval architecture. With magical bridges, cathedrals, and gold-tipped towers and church domes, the city is thriving in its beauty and history. </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/rome.jpg" alt="Rome" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Rome, Italy</h3>
+              <p>Rome, or the "Eternal City", is the largest city in Italy as well as the country's capital. Upon walking the cobblestone streets of the great city, you may happen upon the Colosseum, Trevi Fountain, or Pantheon, or possibly even wonder to Vatican City and have a run in with the Pope. </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/santorini3.jpg" alt="Santorini" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Santorini, Greece</h3>
+              <p>Santorini is a volcanic island in the Cyclades group of the Greek Islands. It is famous for its dramatic views, beautiful sunsets, and dominant white architecture. </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/sicily.jpg" alt="Sicily" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Castellemare del Golfo, Sicily</h3>
+              <p>Castellemare del Golfo is a beautiful coastal town on the rugged and attractive island of Sicily. In this island town, you can take a scenic boat ride to different coastal cities of Sicily, take a drive up Mount Etna, and find yourself snacking on some of the best food in Italy.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/venice.jpg" alt="Venice" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Venice, Italy</h3>
+              <p>Venice is one of the most interesting and lovely places in the world. It is the "City of water" or the "Sanctuary on a Lagoon". In Venice, instead of hailing a cab, you hail a gondola. The city is surrounded by water, but does not lack in its beauty and extraordinary artwork and architecture.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/vienna2.jpg" alt="Vienna" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Vienna, Austria</h3>
+              <p>Vienna is the capital of Austria as well as the largest city in Austria by far. Vienna is Austria's cultural, economic, and political centre. Packed full of concert halls and stages for performances that range from classical to jazz, Vienna was dubbed "The City of Music".</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/zanzibar.jpg" alt="Zanzibar" style="width:100%;" id="height">
+            <div class="carousel-caption">
+              <h3>Zanzibar, Tanzania</h3>
+              <p>Zanzibar is a quiet island located off the coast of Tanzania. This small island is the perfect place to get off the grid for a relaxing couple of days and enjoy the scenic ocean, untouched beaches, and magnificent sunsets.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- space between slide show and contact form when it appears -->
+    <br><br>
+
+    <!-- contact form -->
+    <!-- given id formHeaderFont for styling -->
+    <!-- given id contact for styling and java use -->
+    <div> 
+      <form id="contact"> 
+        <span id="formHeaderFont">First name: </span> <br>
+        <input type="text" name="firstname" placeHolder="Your first name">
+        <br>
+        <span id="formHeaderFont">Last name: </span> <br>
+        <input type="text" name="lastname" placeHolder="Your last name">
+        <br>
+        <span id="formHeaderFont">Email Address: </span><br>
+        <input type="text" name="email" placeholder="jgiordano17@fordham.edu">
+        <br>
+        <textarea placeholder="Messages.."></textarea>
+        <br>
+        <input type="submit" value="Submit" id="formHeaderFont">
+      </form>
+    </div>
+
+    <!-- space between slide show and footer -->
+    <br><br>
+
+
+    <!-- footer -->
+    <footer>© JennaGiordano 2017. All rights reserved. <a href="">Terms + Conditions </a>| <a href="">Privacy Policy</a></footer>
+
+    <!-- space between footer and bottom of page -->
+    <br>
+
+    </body>
+    </html>
